@@ -2,6 +2,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "cba48bb4-e523-4166-80e4-3120aad55a32",
+      safari_web_id: "web.onesignal.auto.3a07767d-f8c5-4ebf-965b-cb322da40f9f",
+      notifyButton: {
+        enable: true,
+      },
+    });
+  });
+</script>       
 <script>var comm_url = "https://request.pushalert.co/";
 var default_title = "";
 var default_message = "";
